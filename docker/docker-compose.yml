@@ -1,0 +1,13 @@
+# Version
+version: '3.1'
+
+# Setup
+services:
+# PHP
+  php:
+    image: docker-anak-ayam
+    restart: always
+    ports:
+      - 5000:80
+    volumes:
+      - ./development:/var/www/html

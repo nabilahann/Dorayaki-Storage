@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: #d9ecd0;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+/* ---NAVIGATION BAR--- */
+nav {
+    background: #f7aeb9;
+    height: 80px;
+    box-shadow: 3px 3px 3px #f7aeb9;
+}
+
+nav span a {
+    font-family: 'Lobster', cursive;
+    line-height: 80px;
+    margin-left: 20px;
+
+    font-size: xx-large;
+}
+
+nav ul {
+    float: right;
+    line-height: 80px;
+}
+
+nav li {
+    display: inline-block;
+    font-size: large;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+nav a:hover, nav a:active {
+    color: #6e382e;
+}
+
+nav ul li i {
+    margin-left: 10px;
+}
+
+/* ---SEARCH BAR--- */
+.search-container {
+    background: #6e382e;
+    height: 50px;
+    clear: both;
+
+    display: flex;
+    justify-content: right;
+    align-items: center; 
+}
+
+.search-bar {
+    background-color: #FFFFFF;
+    margin-right: 100px;
+
+    padding: 3px;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+}
+
+.search-bar input[type=text] {
+    border: none;
+    outline: none;
+    padding: 2px 5px;
+}
+
+.search-bar button {
+    border: none;
+    background-color: #FFFFFF;
+    padding: 2px;
+    color: #6e382e;
+
+    cursor: pointer;
+}
+
+.search-bar button:hover, .search-bar button:active {
+    color: #f7aeb9;
+}
+
+/* ---FOOTER--- */
+.push {
+    height: 50px;
+}
+
+footer {
+    height: 50px;
+    line-height: 50px;
+
+    background-color: #6e382e;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* ---CONTENT--- */
+h1 {
+    color: #6e382e;
+    text-align: center;
+    margin-top: 50px;
+
+    text-decoration: underline;
+    text-decoration-color: #b8874f;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 5px;
+}
+
+.container {
+    width: 85%;
+    margin: 100px auto;
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 50px;
+    color: #6e382e;
+    background-color: #fffde6;
+    box-shadow: 0.2px 0.2px 3px #b8874f;
+}
+
+/* ---SMALL NAVBAR--- */
+#check {
+    display: none;
+}
+
+.checkbtn {
+    display: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+
+    color: #FFFFFF;
+    font-size: xx-large;
+    line-height: 80px;
+}
+
+.checkbtn:hover, .checkbtn:active {
+    color: #6e382e;
+}
+
+/* ---dashboard--- */
+.grid-container {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto auto auto;
+    /* background-color: #2196F3; */
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+img {
+    width:auto;
+    height: 200px;
+}
+
+
+.desc{
+    font-size: 20px;
+}
+
+.desc a{
+    text-decoration: none;
+    color: #6e382e;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1300px){
+
+    /* dashboard */
+    .container {
+        width: 80%;
+    }
+
+    .grid-container {
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        grid-template-columns: auto auto auto;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+
+    /* pencarian */
+    .container {
+        width: 80%;
+    }
+
+    .grid-container {
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        width: 100%;
+        position: fixed;
+        text-align: center;
+        left: -100%;
+        transition: all 0.5s;
+
+        background-color: #f7aeb9;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .search-container {
+        justify-content: center;
+    }
+
+    .search-bar {
+        margin-right: 0;
+    }
+
+    /* pencarian */
+    .container {
+        width: 75%;
+    }
+
+    .grid-container {
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        grid-template-columns: auto;
+    }
+
+    .grid-item{
+        display: flex;
+    }
+
+    .desc{
+        margin: 20px 20px;
+        float: right;
+        justify-items: center;
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,139 @@
+.contain{
+    width: 80%;
+    max-width: 960px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container{
+    margin:0px;
+    min-height: 300px;
+}
+
+.col{
+    width: 40%;
+    /* border: 1px solid blue; */
+    text-align: center;
+}
+
+.col img{
+    width:100%;
+    min-width: 300px;
+    /* border: 1px solid green; */
+}
+
+.descriptions{
+    height: 70%;
+    margin:5% 0;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: auto;
+    justify-content: space-around;
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2{
+    color: #778A35;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #778A35;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+}
+
+.descriptions p{
+    font-size: 17px;
+}
+
+.descriptions span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#jumlahcontrol input[type="button"]{
+    background-color: #778A35;
+    color:#efefef;
+    font-size: 20px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor:pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #787878;
+    margin:3%;
+}
+
+form input[type=text]{
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#buybtn{
+    background-color: #FFFFFF;
+    width : 60%;
+    color: #6e382e;
+    cursor: pointer;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#buybtn:hover{
+    background-color: #f7aeb9;
+}
+
+/* perubahan stok */
+#menu{
+    padding: 10px;
+    border: 1px solid pink;
+}
+
+#menu label span{
+    font-size: 100%;
+    font-weight: normal;
+}
+
+form input[type=radio]{
+    background-color:#f7aeb9;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 800px) {
+    .contain{
+        width: 80%;
+        max-width: 960px;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col{
+        width:70%;
+    }
+
+    .col img{
+        width:100%;
+        max-width: 300px;
+    }
+
+    .container{
+        margin-top: 20px;
+        min-height: 300px;
+    }
+}
